@@ -1,0 +1,28 @@
+{
+	"name": "ReactExample",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"test": "jest"
+	},
+	"dependencies": {
+		"react": "^16.1.0",
+		"react-native": "^0.50.3",
+		"realm": "^2.0.6",
+		"prop-types" : "^15.6.0",
+		"native-navigation" : "^0.2.1",
+
+		"react-native-deprecated-custom-components": "^0.1.1"
+	},
+	"devDependencies": {
+		"babel-jest": "^21.2.0",
+		"babel-preset-react-native": "^4.0.0",
+		"jest": "^21.2.1",
+		"react-test-renderer": "^16.1.0",
+		"invariant": "^2.2.2"
+	},
+	"jest": {
+		"preset": "react-native"
+	}
+}
