@@ -11,9 +11,7 @@
 		"react-native": "^0.50.4",
 		"realm": "^2.0.12",
 		"prop-types" : "^15.6.0",
-		"native-navigation" : "^0.2.1",
-
-		"react-native-deprecated-custom-components": "^0.1.1"
+		"react-navigation" : "^1.0.0-beta.21"
 	},
 	"devDependencies": {
 		"babel-jest": "^21.2.0",
