@@ -91,7 +91,7 @@ export default class TodoApp extends React.Component {
         return (
             <View>
                 <Text>Blabla</Text>
-                <TodoListView/>
+
             </View>
         );
 

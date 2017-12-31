@@ -137,6 +137,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-navigation')
     compile project(':native-navigation')
     compile project(':realm')
     compile fileTree(dir: "libs", include: ["*.jar"])
