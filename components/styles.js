@@ -19,12 +19,11 @@
 'use strict';
 
 import {
-    Navigator,
     Platform,
     StyleSheet
 } from 'react-native';
 
-const { NavBarHeight, TotalNavHeight } = Navigator.NavigationBar.Styles.General;
+
 const iOS = (Platform.OS == 'ios');
 
 export default StyleSheet.create({
@@ -33,40 +32,6 @@ export default StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'stretch',
         backgroundColor: '#fff',
-    },
-    navigator: {
-        flex: 1,
-    },
-    navBar: {
-        backgroundColor: '#f0727d',
-    },
-    navBarView: {
-        alignItems: 'center',
-        flexDirection: 'row',
-        height: NavBarHeight,
-    },
-    navBarLeftArrow: {
-        color: '#fff',
-        fontSize: 40,
-        fontWeight: '200',
-        letterSpacing: 2,
-        marginTop: -6,
-    },
-    navBarLeftButton: {
-        paddingLeft: 8,
-    },
-    navBarRightButton: {
-        paddingRight: 8,
-    },
-    navBarText: {
-        color: '#fff',
-        fontSize: 18,
-    },
-    navBarTitleText: {
-        fontWeight: '500',
-    },
-    navScene: {
-        top: TotalNavHeight,
     },
     listItem: {
         borderColor: '#c8c7cc',

@@ -30,6 +30,7 @@ import {
     Text,
     TouchableOpacity,
     View,
+    Button,
 } from 'react-native';
 
 import PropTypes from 'prop-types';
@@ -75,6 +76,10 @@ export default class TodoApp extends React.Component {
         }
     }
 
+    static navigationOptions = {
+        title: 'Welcome',
+    };
+
     render() {
         let objects = realm.objects('Todo');
         let extraItems = [
@@ -82,7 +87,15 @@ export default class TodoApp extends React.Component {
             {name: 'Incomplete', items: objects.filtered('done = false')},
         ];
 
-        let route = {
+
+        return (
+            <View>
+                <Text>Blabla</Text>
+                <TodoListView/>
+            </View>
+        );
+
+        /*let route = {
             title: 'My Todo Lists',
             component: TodoListView,
             passProps: {
@@ -93,9 +106,9 @@ export default class TodoApp extends React.Component {
             backButtonTitle: 'Lists',
             rightButtonTitle: 'Add',
             onRightButtonPress: this._addNewTodoList,
-        };
+        };*/
 
-        let navigationBar = (
+        /*let navigationBar = (
             <Navigator.NavigationBar routeMapper={RouteMapper} style={styles.navBar} />
         );
 
@@ -108,7 +121,9 @@ export default class TodoApp extends React.Component {
                 sceneStyle={styles.navScene}
                 style={styles.navigator}
             />
-        );
+        );*/
+
+
     }
 
     renderScene(route) {
@@ -183,7 +198,13 @@ export default class TodoApp extends React.Component {
     }
 }
 
-const RouteMapper = {
+const BasicApp = StackNavigator({
+    Main: {screen: TodoListView},
+    ItemView: {screen: TodoListView},
+});
+
+
+/*const RouteMapper = {
     LeftButton(route, navigator, index, navState) {
         if (index == 0) {
             return null;
@@ -227,4 +248,4 @@ const RouteMapper = {
             </View>
         );
     },
-};
+};*/
